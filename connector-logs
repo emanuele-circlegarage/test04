@@ -1,0 +1,1019 @@
+
+> hrs-connector@0.1.0 start /usr/src/app
+> node index.js
+
+[HRS] - Datasource SQL Server Ready
+(node:27) [DEP0064] DeprecationWarning: tls.createSecurePair() is deprecated. Please use tls.TLSSocket instead.
+Fri, 08 Jun 2018 16:12:55 GMT tedious deprecated The `IntN` data type is internal and will be removed. at node_modules/mssql/lib/tedious.js:63:20
+Fri, 08 Jun 2018 16:12:55 GMT tedious deprecated The `BitN` data type is internal and will be removed. at node_modules/mssql/lib/tedious.js:71:40
+Fri, 08 Jun 2018 16:12:55 GMT tedious deprecated The `FloatN` data type is internal and will be removed. at node_modules/mssql/lib/tedious.js:73:20
+Fri, 08 Jun 2018 16:12:55 GMT tedious deprecated The `MoneyN` data type is internal and will be removed. at node_modules/mssql/lib/tedious.js:78:20
+Fri, 08 Jun 2018 16:12:55 GMT tedious deprecated The `NumericN` data type is internal and will be removed. at node_modules/mssql/lib/tedious.js:82:44
+Fri, 08 Jun 2018 16:12:55 GMT tedious deprecated The `DecimalN` data type is internal and will be removed. at node_modules/mssql/lib/tedious.js:83:44
+Fri, 08 Jun 2018 16:12:55 GMT tedious deprecated The `DateTimeN` data type is internal and will be removed. at node_modules/mssql/lib/tedious.js:85:20
+OperatorCalls - result.recordset.length 202
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1808
+res shifts
+res defects
+(node:27) UnhandledPromiseRejectionWarning: ConnectionError: Login failed for user 'FIATAUTO\A010271'.
+    at Connection.tedious.once.err (/usr/src/app/node_modules/mssql/lib/tedious.js:216:17)
+    at Object.onceWrapper (events.js:275:13)
+    at Connection.emit (events.js:182:13)
+    at Connection.processLogin7NTLMAck (/usr/src/app/node_modules/tedious/lib/connection.js:1176:16)
+    at Connection.message (/usr/src/app/node_modules/tedious/lib/connection.js:1709:14)
+    at Connection.dispatchEvent (/usr/src/app/node_modules/tedious/lib/connection.js:863:38)
+    at MessageIO.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:757:18)
+    at MessageIO.emit (events.js:182:13)
+    at ReadablePacketStream.<anonymous> (/usr/src/app/node_modules/tedious/lib/message-io.js:102:16)
+    at ReadablePacketStream.emit (events.js:182:13)
+(node:27) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+(node:27) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+OperatorCalls - result.recordset.length 178
+res insertOperatorCalls
+defect err { RequestError: Database 'SitMesDb' is already open and can only have one user at a time.
+    at handleError (/usr/src/app/node_modules/mssql/lib/tedious.js:828:15)
+    at Connection.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:490:16)
+    at Parser.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/token/token-stream-parser.js:54:15)
+    at Parser.emit (events.js:182:13)
+    at addChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Parser.Readable.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Parser.Transform.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_transform.js:148:32)
+  code: 'EREQUEST',
+  number: 924,
+  lineNumber: 39,
+  state: 1,
+  class: 14,
+  serverName: 'AITTOR16SQCP26G\\MES_PROD1H_AGAP',
+  procName: 'sp_NPL_QUA_GetReportGeneralDefects_locAGAP',
+  originalError: 
+   { Error: Database 'SitMesDb' is already open and can only have one user at a time.
+    at handleError (/usr/src/app/node_modules/mssql/lib/tedious.js:826:19)
+    at Connection.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:490:16)
+    at Parser.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/token/token-stream-parser.js:54:15)
+    at Parser.emit (events.js:182:13)
+    at addChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Parser.Readable.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Parser.Transform.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_transform.js:148:32)
+     info: 
+      { number: 924,
+        state: 1,
+        class: 14,
+        message: 'Database \'SitMesDb\' is already open and can only have one user at a time.',
+        serverName: 'AITTOR16SQCP26G\\MES_PROD1H_AGAP',
+        procName: 'sp_NPL_QUA_GetReportGeneralDefects_locAGAP',
+        lineNumber: 39,
+        name: 'ERROR',
+        event: 'errorMessage' } },
+  name: 'RequestError',
+  precedingErrors: [] }
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1796
+res shifts
+res defects
+(node:27) UnhandledPromiseRejectionWarning: ConnectionError: Login failed for user 'FIATAUTO\A010271'.
+    at Connection.tedious.once.err (/usr/src/app/node_modules/mssql/lib/tedious.js:216:17)
+    at Object.onceWrapper (events.js:275:13)
+    at Connection.emit (events.js:182:13)
+    at Connection.processLogin7NTLMAck (/usr/src/app/node_modules/tedious/lib/connection.js:1176:16)
+    at Connection.message (/usr/src/app/node_modules/tedious/lib/connection.js:1709:14)
+    at Connection.dispatchEvent (/usr/src/app/node_modules/tedious/lib/connection.js:863:38)
+    at MessageIO.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:757:18)
+    at MessageIO.emit (events.js:182:13)
+    at ReadablePacketStream.<anonymous> (/usr/src/app/node_modules/tedious/lib/message-io.js:102:16)
+    at ReadablePacketStream.emit (events.js:182:13)
+(node:27) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)
+OperatorCalls - result.recordset.length 203
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1814
+res shifts
+res defects
+OperatorCalls - result.recordset.length 187
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1777
+res shifts
+res defects
+OperatorCalls - result.recordset.length 72
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1777
+err shifts { Error: Request failed with status code 500
+    at createError (/usr/src/app/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/usr/src/app/node_modules/axios/lib/core/settle.js:18:12)
+    at IncomingMessage.handleStreamEnd (/usr/src/app/node_modules/axios/lib/adapters/http.js:201:11)
+    at IncomingMessage.emit (events.js:187:15)
+    at endReadableNT (_stream_readable.js:1091:14)
+    at process._tickCallback (internal/process/next_tick.js:174:19)
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 0,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json;charset=utf-8',
+        authorization: 'Bearer ucuRv0UUcDbO1OHYNNWztdACZZcD5Po7',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 105 },
+     method: 'post',
+     url: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertShifts',
+     data: '[["Turno1",214,213,1970,99.53,9.21],["Turno2",519,481,3458,92.68,6.66],["TOTAL",733,694,5428,94.68,7.41]]' },
+  request: 
+   ClientRequest {
+     _events: 
+      { socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: true,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: null,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: 'api.hirisio-dev.fiatauto.com',
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.hirisio-dev.fiatauto.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 34842,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     connection: 
+      TLSSocket {
+        _tlsOptions: [Object],
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: 'api.hirisio-dev.fiatauto.com',
+        alpnProtocol: false,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: [Object],
+        _eventsCount: 8,
+        connecting: false,
+        _hadError: false,
+        _handle: [TLSWrap],
+        _parent: null,
+        _host: 'api.hirisio-dev.fiatauto.com',
+        _readableState: [ReadableState],
+        readable: true,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: [TLSWrap],
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(res)]: [TLSWrap],
+        [Symbol(asyncId)]: 34842,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0,
+        [Symbol(connect-options)]: [Object] },
+     _header: 'POST /digital-totem/insertShifts HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json;charset=utf-8\r\nauthorization: Bearer ucuRv0UUcDbO1OHYNNWztdACZZcD5Po7\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 105\r\nHost: api.hirisio-dev.fiatauto.com\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent: 
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 443,
+        protocol: 'https:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256,
+        maxCachedSessions: 100,
+        _sessionCache: [Object] },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'POST',
+     path: '/digital-totem/insertShifts',
+     _ended: true,
+     res: 
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 500,
+        statusMessage: 'Internal Server Error',
+        client: [TLSSocket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertShifts' },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable: 
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _requestBodyLength: 105,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertShifts' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]: 
+      { accept: [Array],
+        'content-type': [Array],
+        authorization: [Array],
+        'user-agent': [Array],
+        'content-length': [Array],
+        host: [Array] } },
+  response: 
+   { status: 500,
+     statusText: 'Internal Server Error',
+     headers: 
+      { server: 'nginx/1.13.7',
+        date: 'Sat, 09 Jun 2018 00:13:21 GMT',
+        'content-type': 'text/html',
+        'content-length': '193',
+        connection: 'close' },
+     config: 
+      { adapter: [Function: httpAdapter],
+        transformRequest: [Object],
+        transformResponse: [Object],
+        timeout: 0,
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        headers: [Object],
+        method: 'post',
+        url: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertShifts',
+        data: '[["Turno1",214,213,1970,99.53,9.21],["Turno2",519,481,3458,92.68,6.66],["TOTAL",733,694,5428,94.68,7.41]]' },
+     request: 
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header: 'POST /digital-totem/insertShifts HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json;charset=utf-8\r\nauthorization: Bearer ucuRv0UUcDbO1OHYNNWztdACZZcD5Po7\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 105\r\nHost: api.hirisio-dev.fiatauto.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/digital-totem/insertShifts',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: '<html>\r\n<head><title>500 Internal Server Error</title></head>\r\n<body bgcolor="white">\r\n<center><h1>500 Internal Server Error</h1></center>\r\n<hr><center>nginx/1.13.7</center>\r\n</body>\r\n</html>\r\n' } }
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1777
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1777
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1764
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1728
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1682
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1626
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1560
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1499
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1446
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1415
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1399
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1399
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1399
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1399
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1366
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1296
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1206
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 3
+Defects result.recordsets[1].length 1110
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 2
+Defects result.recordsets[1].length 1034
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 2
+Defects result.recordsets[1].length 911
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 2
+Defects result.recordsets[1].length 693
+res shifts
+res defects
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 2
+Defects result.recordsets[1].length 492
+res shifts
+res defects
+Shifts result.recordset[0].length 1
+Defects result.recordsets[1].length 0
+res defects
+res shifts
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+defect err { RequestError: Database 'SitMesDb' is already open and can only have one user at a time.
+    at handleError (/usr/src/app/node_modules/mssql/lib/tedious.js:828:15)
+    at Connection.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:490:16)
+    at Parser.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/token/token-stream-parser.js:54:15)
+    at Parser.emit (events.js:182:13)
+    at addChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Parser.Readable.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Parser.Transform.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_transform.js:148:32)
+  code: 'EREQUEST',
+  number: 924,
+  lineNumber: 39,
+  state: 1,
+  class: 14,
+  serverName: 'AITTOR16SQCP26G\\MES_PROD1H_AGAP',
+  procName: 'sp_NPL_QUA_GetReportGeneralDefects_locAGAP',
+  originalError: 
+   { Error: Database 'SitMesDb' is already open and can only have one user at a time.
+    at handleError (/usr/src/app/node_modules/mssql/lib/tedious.js:826:19)
+    at Connection.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:490:16)
+    at Parser.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/token/token-stream-parser.js:54:15)
+    at Parser.emit (events.js:182:13)
+    at addChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Parser.Readable.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Parser.Transform.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_transform.js:148:32)
+     info: 
+      { number: 924,
+        state: 1,
+        class: 14,
+        message: 'Database \'SitMesDb\' is already open and can only have one user at a time.',
+        serverName: 'AITTOR16SQCP26G\\MES_PROD1H_AGAP',
+        procName: 'sp_NPL_QUA_GetReportGeneralDefects_locAGAP',
+        lineNumber: 39,
+        name: 'ERROR',
+        event: 'errorMessage' } },
+  name: 'RequestError',
+  precedingErrors: [] }
+(node:27) UnhandledPromiseRejectionWarning: ConnectionError: Login failed for user 'FIATAUTO\A010271'.
+    at Connection.tedious.once.err (/usr/src/app/node_modules/mssql/lib/tedious.js:216:17)
+    at Object.onceWrapper (events.js:275:13)
+    at Connection.emit (events.js:182:13)
+    at Connection.processLogin7NTLMAck (/usr/src/app/node_modules/tedious/lib/connection.js:1176:16)
+    at Connection.message (/usr/src/app/node_modules/tedious/lib/connection.js:1709:14)
+    at Connection.dispatchEvent (/usr/src/app/node_modules/tedious/lib/connection.js:863:38)
+    at MessageIO.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:757:18)
+    at MessageIO.emit (events.js:182:13)
+    at ReadablePacketStream.<anonymous> (/usr/src/app/node_modules/tedious/lib/message-io.js:102:16)
+    at ReadablePacketStream.emit (events.js:182:13)
+(node:27) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 7)
+(node:27) UnhandledPromiseRejectionWarning: ConnectionError: Login failed for user 'FIATAUTO\A010271'.
+    at Connection.tedious.once.err (/usr/src/app/node_modules/mssql/lib/tedious.js:216:17)
+    at Object.onceWrapper (events.js:275:13)
+    at Connection.emit (events.js:182:13)
+    at Connection.processLogin7NTLMAck (/usr/src/app/node_modules/tedious/lib/connection.js:1176:16)
+    at Connection.message (/usr/src/app/node_modules/tedious/lib/connection.js:1709:14)
+    at Connection.dispatchEvent (/usr/src/app/node_modules/tedious/lib/connection.js:863:38)
+    at MessageIO.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:757:18)
+    at MessageIO.emit (events.js:182:13)
+    at ReadablePacketStream.<anonymous> (/usr/src/app/node_modules/tedious/lib/message-io.js:102:16)
+    at ReadablePacketStream.emit (events.js:182:13)
+(node:27) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 9)
+defect err { TimeoutError: ResourceRequest timed out
+    at ResourceRequest._fireTimeout (/usr/src/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+    at Timeout.bound (/usr/src/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+    at ontimeout (timers.js:427:11)
+    at tryOnTimeout (timers.js:289:5)
+    at listOnTimeout (timers.js:252:5)
+    at Timer.processTimers (timers.js:212:10) name: 'TimeoutError' }
+err connect { ConnectionError: Login failed for user 'FIATAUTO\A010271'.
+    at Connection.tedious.once.err (/usr/src/app/node_modules/mssql/lib/tedious.js:216:17)
+    at Object.onceWrapper (events.js:275:13)
+    at Connection.emit (events.js:182:13)
+    at Connection.processLogin7NTLMAck (/usr/src/app/node_modules/tedious/lib/connection.js:1176:16)
+    at Connection.message (/usr/src/app/node_modules/tedious/lib/connection.js:1709:14)
+    at Connection.dispatchEvent (/usr/src/app/node_modules/tedious/lib/connection.js:863:38)
+    at MessageIO.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:757:18)
+    at MessageIO.emit (events.js:182:13)
+    at ReadablePacketStream.<anonymous> (/usr/src/app/node_modules/tedious/lib/message-io.js:102:16)
+    at ReadablePacketStream.emit (events.js:182:13)
+  code: 'ELOGIN',
+  originalError: 
+   { ConnectionError: Login failed for user 'FIATAUTO\A010271'.
+    at ConnectionError (/usr/src/app/node_modules/tedious/lib/errors.js:12:12)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/connection.js:507:33)
+    at Parser.emit (events.js:182:13)
+    at Parser.<anonymous> (/usr/src/app/node_modules/tedious/lib/token/token-stream-parser.js:54:15)
+    at Parser.emit (events.js:182:13)
+    at addChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:291:12)
+    at readableAddChunk (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:278:11)
+    at Parser.Readable.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_readable.js:245:10)
+    at Parser.Transform.push (/usr/src/app/node_modules/tedious/node_modules/readable-stream/lib/_stream_transform.js:148:32)
+    at doneParsing (/usr/src/app/node_modules/tedious/lib/token/stream-parser.js:110:18)
+     message: 'Login failed for user \'FIATAUTO\\A010271\'.',
+     code: 'ELOGIN' },
+  name: 'ConnectionError' }
+Shifts result.recordset[0].length 1
+Defects result.recordsets[1].length 0
+err defects { Error: Client network socket disconnected before secure TLS connection was established
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1097:19)
+    at Object.onceWrapper (events.js:275:13)
+    at TLSSocket.emit (events.js:187:15)
+    at endReadableNT (_stream_readable.js:1091:14)
+    at process._tickCallback (internal/process/next_tick.js:174:19)
+  code: 'ECONNRESET',
+  path: null,
+  host: 'api.hirisio-dev.fiatauto.com',
+  port: 443,
+  localAddress: undefined,
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 0,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json;charset=utf-8',
+        authorization: 'Bearer mX1WXEOey63YzwVOFal7jupTQ0MmFc5s',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 2 },
+     method: 'post',
+     url: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertDefects',
+     data: '[]' },
+  request: 
+   Writable {
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: true,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        emitClose: true,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     _events: 
+      { response: [Function: handleResponse],
+        error: [Function: handleRequestError] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     _options: 
+      { protocol: 'https:',
+        maxRedirects: 21,
+        maxBodyLength: 10485760,
+        path: '/digital-totem/insertDefects',
+        method: 'post',
+        headers: [Object],
+        agent: undefined,
+        auth: undefined,
+        hostname: 'api.hirisio-dev.fiatauto.com',
+        port: null,
+        nativeProtocols: [Object],
+        pathname: '/digital-totem/insertDefects' },
+     _redirectCount: 0,
+     _requestBodyLength: 2,
+     _requestBodyBuffers: [ [Object] ],
+     _onNativeResponse: [Function],
+     _currentRequest: 
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header: 'POST /digital-totem/insertDefects HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json;charset=utf-8\r\nauthorization: Bearer mX1WXEOey63YzwVOFal7jupTQ0MmFc5s\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 2\r\nHost: api.hirisio-dev.fiatauto.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/digital-totem/insertDefects',
+        _ended: false,
+        res: null,
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Circular],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     _currentUrl: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertDefects' },
+  response: undefined }
+err shifts { Error: read ECONNRESET
+    at TLSWrap.onread (net.js:659:25)
+  errno: 'ECONNRESET',
+  code: 'ECONNRESET',
+  syscall: 'read',
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 0,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json;charset=utf-8',
+        authorization: 'Bearer mX1WXEOey63YzwVOFal7jupTQ0MmFc5s',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 30 },
+     method: 'post',
+     url: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertShifts',
+     data: '[["TOTAL",null,null,null,0,0]]' },
+  request: 
+   Writable {
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: true,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        emitClose: true,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     _events: 
+      { response: [Function: handleResponse],
+        error: [Function: handleRequestError] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     _options: 
+      { protocol: 'https:',
+        maxRedirects: 21,
+        maxBodyLength: 10485760,
+        path: '/digital-totem/insertShifts',
+        method: 'post',
+        headers: [Object],
+        agent: undefined,
+        auth: undefined,
+        hostname: 'api.hirisio-dev.fiatauto.com',
+        port: null,
+        nativeProtocols: [Object],
+        pathname: '/digital-totem/insertShifts' },
+     _redirectCount: 0,
+     _requestBodyLength: 30,
+     _requestBodyBuffers: [ [Object] ],
+     _onNativeResponse: [Function],
+     _currentRequest: 
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header: 'POST /digital-totem/insertShifts HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json;charset=utf-8\r\nauthorization: Bearer mX1WXEOey63YzwVOFal7jupTQ0MmFc5s\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 30\r\nHost: api.hirisio-dev.fiatauto.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/digital-totem/insertShifts',
+        _ended: false,
+        res: null,
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Circular],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     _currentUrl: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertShifts' },
+  response: undefined }
+OperatorCalls - result.recordset.length 0
+err insertOperatorCalls { Error: read ECONNRESET
+    at TLSWrap.onread (net.js:659:25)
+  errno: 'ECONNRESET',
+  code: 'ECONNRESET',
+  syscall: 'read',
+  config: 
+   { adapter: [Function: httpAdapter],
+     transformRequest: { '0': [Function: transformRequest] },
+     transformResponse: { '0': [Function: transformResponse] },
+     timeout: 0,
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     headers: 
+      { Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json;charset=utf-8',
+        authorization: 'Bearer mX1WXEOey63YzwVOFal7jupTQ0MmFc5s',
+        'User-Agent': 'axios/0.18.0',
+        'Content-Length': 2 },
+     method: 'post',
+     url: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertOperatorCalls',
+     data: '[]' },
+  request: 
+   Writable {
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: false,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        destroyed: false,
+        decodeStrings: true,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: true,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        emitClose: true,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     _events: 
+      { response: [Function: handleResponse],
+        error: [Function: handleRequestError] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     _options: 
+      { protocol: 'https:',
+        maxRedirects: 21,
+        maxBodyLength: 10485760,
+        path: '/digital-totem/insertOperatorCalls',
+        method: 'post',
+        headers: [Object],
+        agent: undefined,
+        auth: undefined,
+        hostname: 'api.hirisio-dev.fiatauto.com',
+        port: null,
+        nativeProtocols: [Object],
+        pathname: '/digital-totem/insertOperatorCalls' },
+     _redirectCount: 0,
+     _requestBodyLength: 2,
+     _requestBodyBuffers: [ [Object] ],
+     _onNativeResponse: [Function],
+     _currentRequest: 
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: true,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: null,
+        _hasBody: true,
+        _trailer: '',
+        finished: false,
+        _headerSent: true,
+        socket: [TLSSocket],
+        connection: [TLSSocket],
+        _header: 'POST /digital-totem/insertOperatorCalls HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json;charset=utf-8\r\nauthorization: Bearer mX1WXEOey63YzwVOFal7jupTQ0MmFc5s\r\nUser-Agent: axios/0.18.0\r\nContent-Length: 2\r\nHost: api.hirisio-dev.fiatauto.com\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'POST',
+        path: '/digital-totem/insertOperatorCalls',
+        _ended: false,
+        res: null,
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Circular],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     _currentUrl: 'https://api.hirisio-dev.fiatauto.com/digital-totem/insertOperatorCalls' },
+  response: undefined }
+OperatorCalls - result.recordset.length 0
+res insertOperatorCalls
+Shifts result.recordset[0].length 1
+Defects result.recordsets[1].length 0
+res shifts
+res defects
+OperatorCalls - result.recordset.length 205
+res insertOperatorCalls
+Shifts result.recordset[0].length 2
+Defects result.recordsets[1].length 848
+res shifts
+res defects
+OperatorCalls - result.recordset.length 214
+res insertOperatorCalls
+Shifts result.recordset[0].length 2
+Defects result.recordsets[1].length 1087
+res shifts
+res defects
